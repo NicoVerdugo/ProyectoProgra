@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crear Asignaturas</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Crear Asignaturas</h1>
+    </div>
+<div class="divPrincipal">
+    <div class="div1">
+        <button class="btn Crear">Crear asignatura</button>
+        <button class="btn Mod">Modificar asignatura</button>
+        <button class="btn Elim">Eliminar asignatura</button>        
+    </div>
+
+    <section>
+    <div class="div2">
+        <p>
+            <label for="name">Nombre asignatura:</label>
+            <input type="text" id="name_asig" name="name_asig" />
+          </p>  
+        <form action="/my-handling-form-page" method="post">
+            <ul list-style:none>
+              
+              <li class="item-5 deeper parent" style="list-style-type: none;">
+                <label>Asignar Actividades</label>
+              </li>
+              <li class="item-5 deeper parent" style="list-style-type: none;">
+                <input type="checkbox" id="taller" name="taller" value="taller" />
+                <label for="">Taller - Valor porcentaje</label>
+                <input type="text" id="" name="" />
+                <label>%</label>
+              </li>
+              <li class="item-5 deeper parent" style="list-style-type: none;">
+                <input type="checkbox" id="evl" name="evl" value="evl" />
+                <label for="">Evaluación - Valor porcentaje</label>
+                <input type="text" id="" name="" />
+                <label>%</label>
+
+              </li>
+              <li class="item-5 deeper parent" style="list-style-type: none;">
+                <input type="checkbox" id="pryj" name="pryj" value="pryj" />
+                <label for="">Proyecto - Valor porcentaje</label>
+                <input type="text" id="" name="" />
+                <label>%</label>    
+              </li>
+            </ul>
+          </form>
+
+          <button class="btnGuardar">Guardar</button>
+    </div>
+    </section>
+</div>
+</body>
+</html>
