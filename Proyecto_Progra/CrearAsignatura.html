@@ -3,13 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>Crear Asignaturas</title>
 </head>
 <body>
-    <div class="contenedor">
-        <h1 class="titulo">Crear Asignaturas</h1>
-    </div>
+
+  <header>
+    <div class="titulo">
+      <img src="assets/label.svg" class="list_img">
+      <h1 >CREAR ASIGNATURA</h1>
+      <img src="assets/notify.svg" class="list_img">
+      </div>
+
+    <nav class="nav">
+        
+      <ul class="list">
+          <li class="list_item">
+              <div class="list_button">
+                  <img src="assets/inicio.svg" class="list_img">
+                  <a href="index.html" class="nav_link">Inicio</a>
+              </div>
+          </li>
+
+          <li class="list_item list_item--click">
+              <div class="list_button list_button--click">
+                  <img src="assets/book.svg" class="list_img">
+                  <a href="Gestion_Asign.html" class="nav_link">Asignaturas</a>
+                  <img src="assets/arrow.svg" class="list_arrow">
+              </div>
+
+              <ul class="list_show">
+                  <li class="list_inside">
+                      <a href="CrearAsignatura.html" class="nav_link nav_link--inside">Crear</a>
+                  </li>   
+
+                  <li class="list_inside">
+                      <a href="#" class="nav_link nav_link--inside">Modificar</a>
+                  </li>
+
+                  <li class="list_inside">
+                      <a href="#" class="nav_link nav_link--inside">Eliminar</a>
+                  </li>
+              </ul>
+
+          </li>
+
+          <li class="list_item list_item--click">
+              <div class="list_button list_button--click">
+                  <img src="assets/notes.svg" class="list_img">
+                  <a href="#" class="nav_link">Calificaciones</a>
+                  <img src="assets/arrow.svg" class="list_arrow">
+              </div>
+
+              <ul class="list_show">
+                  <li class="list_inside">
+                      <a href="#" class="nav_link nav_link--inside">Ver notas</a>
+                  </li> 
+              </ul>
+          </li>
+
+
+      </ul>    
+  </nav>
+
+  <script src="main.js"></script>
+</header>
+
 <div class="divPrincipal">
     <div class="div1">
         <button class="btn Crear">Crear asignatura</button>
@@ -17,8 +76,7 @@
         <button class="btn Elim">Eliminar asignatura</button>        
     </div>
 
-    <section>
-    <div class="div2">
+    <section class="contenido">
         <p>
             <label for="name">Nombre asignatura:</label>
             <input type="text" id="name_asig" name="name_asig" />
@@ -27,7 +85,7 @@
             <ul list-style:none>
               
               <li class="item-5 deeper parent" style="list-style-type: none;">
-                <label>Asignar Actividades</label>
+                <label>Asignar Actividades: </label>
               </li>
               <li class="item-5 deeper parent" style="list-style-type: none;">
                 <input type="checkbox" id="taller" name="taller" value="taller" />
@@ -54,6 +112,5 @@
           <button class="btnGuardar">Guardar</button>
     </div>
     </section>
-</div>
 </body>
 </html>
